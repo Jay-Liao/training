@@ -7,9 +7,12 @@ func main() {
 	fmt.Printf(HelloWorld("appleboy"))
 	fmt.Println("一天就學會 Go 語言")
 
-	if (a >= 1) { fmt.Println("a >= 1") }
+	if a >= 1 {
+		fmt.Println("a >= 1")
+	}
 }
 
-func HelloWorld(user_name string) string {
-	return fmt.Sprintf("Hi, %s ", user_name)
+// HelloWorld gofmt and golint training
+func HelloWorld(userName string) string {
+	return fmt.Sprintf("Hi, %s ", userName)
 }
